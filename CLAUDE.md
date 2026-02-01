@@ -6,6 +6,28 @@ This document provides comprehensive technical details about the OpenWhispr proj
 
 OpenWhispr is an Electron-based desktop dictation application that uses whisper.cpp for speech-to-text transcription. It supports both local (privacy-focused) and cloud (OpenAI API) processing modes.
 
+## Development Workflow
+
+### After Completing Code Changes
+
+When you finish implementing a feature, fixing a bug, or making code changes, **always validate your work**:
+
+```bash
+# Run linting and formatting check
+npm run format:check
+
+# If there are issues, auto-fix them
+npm run format:js
+```
+
+Do this before considering the task complete. If linting fails, fix the issues before moving on.
+
+### Code Review
+
+Use `/review` to review PRs against project standards, or `/review [PR#] --post` to post review comments to GitHub.
+
+Use `/pr-comments [PR#]` to fetch and address review feedback.
+
 ## Architecture Overview
 
 ### Core Technologies
